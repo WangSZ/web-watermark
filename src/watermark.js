@@ -24,7 +24,7 @@
         ratio = this._getPixelRatio(ctx);
 
       canvas.id = settings.id;
-      canvas.style.cssText = 'position: fixed; top: 0; left: 0; right: 0; bottom: 0; width: 100%; height: 100%; z-index: -100;';
+      canvas.style.cssText = 'position: fixed; pointer-events: none; top: 0; left: 0; right: 0; bottom: 0; width: 100%; height: 100%; z-index: 100;';
       canvas.width = window.screen.width;
       canvas.height = window.screen.height;
       canvas.innerHTML = settings.tip;
